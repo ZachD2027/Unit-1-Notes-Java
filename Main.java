@@ -47,6 +47,37 @@ public class Main {
          System.out.println(remain);
          System.out.println(628 % 2); // 0 -> means EVEN number
 
+         // You can set one variable to another's value
+         int zach_age = 16;
+         int aaniyah_age = zach_age;
+         // both variables above contain the same value
+
+         // Practice copying & re-assigning values
+         int x = 15;
+         int y = 21;
+         int z = 2;
+         x = y; // x now sotres the same value as y
+         y = y * 2;
+         z = 27;
+         System.out.println(x);
+         System.out.println(y);
+         System.out.println(z);
+         System.out.print("x is " + x);  
+         System.out.print("Y is " + y); 
+         System.out.print("Z is " + z);
+         
+         // type mismatch error
+         double num1 = 3; // int would cause an error below!
+         double num2 = 3.141592653578;
+         num1 = 2 * num2;
+         System.out.println(num1);
+
+         // INCREMENT: add on to current value
+         int points = 0;
+         points = points + 1;
+         // DECREMENT: decrease an existing value
+         points = points - 15;
+         System.out.println(points);
 
       
    }
