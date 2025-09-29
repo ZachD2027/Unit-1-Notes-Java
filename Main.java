@@ -79,7 +79,34 @@ public class Main {
          points = points - 15;
          System.out.println(points);
 
-      
+         // CASTING (convert data types)
+         int originalValue = 5;
+         double castDouble = (double) originalValue;
+         System.out.println("Cast to double: " + castDouble); 
+         int castInt = (int) castDouble;
+         System.out.println("Cast back to int: " + castInt);
+
+         // Examples of math and casting
+         System.out.println(3/4); // 0
+         System.out.println(3.0/4); // 0.75
+         System.out.println( 3/4.0); // 0.75
+         System.out.println((double) 3/4);
+         // casting preserved the devimal places (no truncation)
+         System.out.println((int) 3.0/4 ); // 0 (truncated!)
+
+         // Casting is helpful when dividing integers
+         int apcs = 13;
+         int juniors = 40;
+         double csPercent = (double) apcs/juniors;
+         System.out.println(csPercent); // 0.325
+
+         // ROUNDING by casting
+         double positiveNum = 26.09;
+         double negativeNum = -3.141592653578; 
+         int nearestPositive = (int) (positiveNum + 0.5);
+         System.out.println(nearestPositive);
+         int nearestNegative = (int) (negativeNum - 0.5);
+          System.out.println(nearestNegative);
    }
 }
  
